@@ -89,6 +89,4 @@ const getEndpoints = function (app: Regulus['server']) {
   return parseEndpoints(app)
 }
 
-// module.exports = getEndpoints
-
 export default getEndpoints
