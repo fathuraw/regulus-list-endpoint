@@ -54,8 +54,8 @@ var parseEndpoints = function (app, basePath, endpoints) {
     });
     return endpoints;
 };
-var getEndpoints = function (regulus) {
-    return parseEndpoints(regulus.server);
+var getEndpoints = function (app) {
+    return parseEndpoints(app);
 };
 exports.default = getEndpoints;
 //# sourceMappingURL=index.js.map

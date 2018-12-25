@@ -85,8 +85,8 @@ const parseEndpoints = function (app: Regulus['server'], basePath?: string, endp
  * Returns an array of strings with all the detected endpoints
  * @param {Object} app the express/route instance to get the endponts from
  */
-const getEndpoints = function (regulus: Regulus) {
-  return parseEndpoints(regulus.server)
+const getEndpoints = function (app: Regulus['server']) {
+  return parseEndpoints(app)
 }
 
 export default getEndpoints

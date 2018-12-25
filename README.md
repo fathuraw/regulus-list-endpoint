@@ -18,17 +18,16 @@ const App = new Regulus({
 
 // start argument: express listen callback
 App.start(() => {
-  printRoutes(App).forEach((route) => console.log(`${route.methods} ${route.path}`))
+  printRoutes(App.server).forEach((route) => console.log(`${route.methods} ${route.path}`))
   console.log('Listen: 8888')
 })
 
 console.log(listEndpoints(app));
-/* It will print this:
+/* It will like this:
 GET /v1/ping
-POST /v1/train
-POST /v1/trainingStatus
-POST /v1/query
-POST /v1/trigger
+POST /v1/route3
+POST /v1/route1
+POST /v1/route2
 */
 ```
 
