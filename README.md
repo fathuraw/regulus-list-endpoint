@@ -18,7 +18,7 @@ const App = new Regulus({
 
 // start argument: express listen callback
 App.start(() => {
-  printRoutes(App.server).forEach((route) => console.log(`${route.methods} ${route.path}`))
+  printRoutes(App).forEach((route) => console.log(`${route.methods} ${route.path}`))
   console.log('Listen: 8888')
 })
 
